@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sprite Card Battle</title>
+    <link rel="stylesheet" href="jack sun.css">
+</head>
+
+<body>
+
+    <h1>SPRITE CARD BATTLE</h1>
+
+    <div class="battle">
+
+        <!-- Enemy -->
+        <div class="character enemy-area">
+            
+
+            
+    <img id="enemySprite" class="sprite enemy-sprite" src="image/goblin.gif" alt="Enemy">
+    <div class="health-bar">
+                <div id="enemyHealth" class="health"></div>
+            </div>
+
+            <p id="enemyHP">100 / 100</p>
+<h2 id="enemyName">Crazy Goblin</h2>
+        </div>
+
+        <div class="vs">VS</div>
+
+        <!-- Player -->
+        <div class="character player-area">
+            <img id="playerSprite" class="jack" src="image/player.gif" alt="Jack Sun">
+            <div class="health-bar">   
+                <div id="playerHealth" class="health"></div>
+            </div>
+
+            <p id="playerHP">100 / 100</p>
+
+            <div id="playerSprite" class="sprite player-sprite"></div>
+
+        </div>
+
+    </div>
+
+    <!-- Player stats -->
+
+    <div class="stats">
+
+        <div>
+            ❤️ HP:
+            <span id="hpText">100</span>
+        </div>
+
+        <div>
+            ⚡ Energy:
+            <span id="energyText">3</span>
+        </div>
+
+        <div>
+            🛡️ Block:
+            <span id="blockText">0</span>
+        </div>
+
+        <div>
+            💰 Gold:
+            <span id="goldText">0</span>
+        </div>
+
+    </div>
+<!-- SHOP -->
+<div id="shopScreen" class="shop-screen" style="display: none;">
+    <h1>🛒 JACK SUN SHOP</h1>
+    <p>Gold: <span id="shopGold">0</span></p>
+
+    <div id="shopItems" class="shop-items"></div>
+
+    <button id="rerollShopButton" onclick="rerollShop()">
+        🔄 Reroll Shop - 10 Gold
+    </button>
+
+    <button id="leaveShopButton">Leave Shop</button>
+</div>
+    <!-- Battle message -->
+
+    <div id="battleMessage">
+        Your turn!
+    </div>
+
+    <!-- Cards -->
+
+    <div id="cards" class="cards"></div>
+
+    <button id="endTurnButton" onclick="endTurn()">
+        END TURN
+    </button>
+
+    <script src="jack sun.js"></script>
+
+</body>
+</html>
